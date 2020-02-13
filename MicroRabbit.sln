@@ -44,13 +44,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{CD1D11BB-6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{9258C7F6-5253-4040-8A77-F4B715B6E34C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Banking.Api", "src\Microservices\Banking\Api\MicroRabbit.Banking.Api\MicroRabbit.Banking.Api.csproj", "{12C9170F-4754-4058-9EEA-B88A019CFC24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Banking.Api", "src\Microservices\Banking\Api\MicroRabbit.Banking.Api\MicroRabbit.Banking.Api.csproj", "{12C9170F-4754-4058-9EEA-B88A019CFC24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Banking.Application", "src\Microservices\Banking\Application\MicroRabbit.Banking.Application\MicroRabbit.Banking.Application.csproj", "{3E3A0793-C3B8-4FFF-AF9E-5EE526EAF005}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Banking.Application", "src\Microservices\Banking\Application\MicroRabbit.Banking.Application\MicroRabbit.Banking.Application.csproj", "{3E3A0793-C3B8-4FFF-AF9E-5EE526EAF005}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Banking.Data", "src\Microservices\Banking\Data\MicroRabbit.Banking.Data\MicroRabbit.Banking.Data.csproj", "{49D557CC-A145-4BB8-88DE-74ECA06FBB8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Banking.Data", "src\Microservices\Banking\Data\MicroRabbit.Banking.Data\MicroRabbit.Banking.Data.csproj", "{49D557CC-A145-4BB8-88DE-74ECA06FBB8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Banking.Domain", "src\Microservices\Banking\Domain\MicroRabbit.Banking.Domain\MicroRabbit.Banking.Domain.csproj", "{5B7BB9AC-6466-4840-98D9-D04B47C63281}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Banking.Domain", "src\Microservices\Banking\Domain\MicroRabbit.Banking.Domain\MicroRabbit.Banking.Domain.csproj", "{5B7BB9AC-6466-4840-98D9-D04B47C63281}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{88A655D2-FD94-4D94-93E5-CB9E74ABC3CA}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\[dbo].[Accounts].sql = scripts\[dbo].[Accounts].sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,6 +124,7 @@ Global
 		{3E3A0793-C3B8-4FFF-AF9E-5EE526EAF005} = {4CACF75A-A625-4EEB-AD7B-80873702823A}
 		{49D557CC-A145-4BB8-88DE-74ECA06FBB8A} = {CD1D11BB-6E21-4387-9D52-AC8579A76E6E}
 		{5B7BB9AC-6466-4840-98D9-D04B47C63281} = {9258C7F6-5253-4040-8A77-F4B715B6E34C}
+		{88A655D2-FD94-4D94-93E5-CB9E74ABC3CA} = {4E2659A8-C75A-4EFA-969E-E8F37FD6950A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3C3C25BB-7A2F-4582-8B56-FFDA9F8B679B}
