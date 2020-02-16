@@ -44,7 +44,7 @@ namespace MicroRabbit.Banking.Api
                     Version = "v1",
                     Contact = new OpenApiContact {
                         Name = "Georgios Manoltzas",
-                        Email = "giorgos.manoltzas@indice.gr"
+                        Email = "g.manoltzas@indice.gr"
                     },
                     Description = "A fully-featured banking microservice."
                 });
@@ -55,10 +55,10 @@ namespace MicroRabbit.Banking.Api
                 }
             });
             services.AddMediatR(typeof(Startup));
-            DependencyContainer.ConfigureServices(services);
             services.AddDbContext<BankingDbContext>(options => {
                 options.UseSqlServer(Configuration.GetConnectionString("BankingDbConnection"));
             });
+            DependencyContainer.ConfigureServices(services);
         }
 
         /// <summary>

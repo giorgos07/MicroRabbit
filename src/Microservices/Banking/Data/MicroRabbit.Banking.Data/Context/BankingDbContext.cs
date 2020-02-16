@@ -12,5 +12,10 @@ namespace MicroRabbit.Banking.Data.Context
         }
 
         public DbSet<Account> Accounts { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder) {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Account>().Property(x => x.Balance).HasColumnType("decimal(18,2)");
+        }
     }
 }
