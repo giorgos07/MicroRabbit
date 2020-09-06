@@ -80,9 +80,9 @@ namespace MicroRabbit.Infrastructure.Bus
             _rabbitMqChannel.BasicConsume(queue: eventName, autoAck: true, consumer);
         }
 
-        private async Task ConsumerReceived(object sender, BasicDeliverEventArgs @event) {
-            var eventName = @event.RoutingKey;
-            var message = Encoding.UTF8.GetString(@event.Body);
+        private async Task ConsumerReceived(object sender, BasicDeliverEventArgs eventArgs) {
+            var eventName = eventArgs.RoutingKey;
+            var message = Encoding.UTF8.GetString(eventArgs.Body.ToArray());
             try {
                 await ProcessEvent(eventName, message).ConfigureAwait(false);
             } catch (Exception) {

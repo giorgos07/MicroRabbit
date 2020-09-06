@@ -1,0 +1,25 @@
+﻿@model TransferViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<form asp-controller="@HomeController.Name" asp-action="@nameof(HomeController.Transfer)" method="post">
+    <div class="form-group">
+        <label asp-for="FromAccount">From Account</label>
+        <input asp-for="FromAccount" type="number" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ToAccount">To Account</label>
+        <input asp-for="ToAccount" type="number" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="TransferAmount">Amount</label>
+        <input asp-for="TransferAmount" type="number" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

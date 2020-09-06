@@ -6,7 +6,7 @@
     <Folder Include="EventHandlers\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="8.0.0" />
+    <PackageReference Include="MediatR" Version="8.1.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Domain\MicroRabbit.Domain.Core\MicroRabbit.Domain.Core.csproj" />

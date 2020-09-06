@@ -44,7 +44,7 @@ namespace MicroRabbit.Banking.Api.Controllers
         /// <response code="200">OK</response>
         [HttpPost("accounts/transfer-funds")]
         [ProducesResponseType(statusCode: StatusCodes.Status200OK, type: typeof(void))]
-        public IActionResult TransferFunds([FromBody]AccountTransferRequest request) {
+        public IActionResult TransferFunds([FromBody] AccountTransferRequest request) {
             _accountService.TransferFunds(request);
             return Ok();
         }

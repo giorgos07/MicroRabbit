@@ -24,9 +24,9 @@ namespace Consumer
             Console.ReadKey();
         }
 
-        private static void ConsumerReceived(object sender, BasicDeliverEventArgs e) {
-            var body = e.Body;
-            var message = Encoding.UTF8.GetString(body);
+        private static void ConsumerReceived(object sender, BasicDeliverEventArgs eventArgs) {
+            var body = eventArgs.Body;
+            var message = Encoding.UTF8.GetString(body.ToArray());
             Console.WriteLine($"Received message: '{message}'");
         }
     }
